@@ -1,0 +1,455 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* start header */
+header {
+    width: 100%;
+    height: max-content;
+}
+
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: #44426E;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 999;
+}
+
+nav .nav2 ul {
+    list-style: none;
+}
+
+nav button {
+    width: 15px;
+    height: 15px;
+    background: none;
+    color: white;
+    display: none;
+}
+
+nav .nav2 ul li a,
+p {
+    color: white;
+    text-decoration: none;
+}
+
+nav .nav2 ul li {
+    padding: 0px 10px;
+}
+
+.nav2 ul li a:hover {
+    color: #090325;
+    transition: 1s all 0.5s;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: #ec702d;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 100px 0px;
+    gap: 10px 0px;
+    color:#180e46;
+}
+
+.hero ul,
+.ABOUT ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+}
+
+.hero .hr,
+.ABOUT .hr,
+.CONTACT-ME .hr,
+.PROTFOLIO .hr {
+    position: relative;
+}
+
+.hero .hr::before,
+.ABOUT .hr::before {
+    content: " ";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 35px;
+    top: 50%;
+}
+.hero p{
+    color:#180e46;
+}
+
+.hero .hr::after,
+.ABOUT .hr::after {
+    content: " ";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    right: 35px;
+    top: 50%;
+}
+
+.personal {
+    width: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: 34%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.hero div {
+    width: 245px;
+    height: 245px;
+    background-color:#e0a788;
+    border-radius: 50%;
+    position: relative;
+}
+
+/* end header */
+/* start PROTFOLIO */
+.PROTFOLIO,
+.CONTACT-ME {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    margin: 30px 0px;
+}
+
+.star1 {
+    width: 30px;
+    height: 30px;
+    color: rgb(44, 62, 80);
+}
+
+.CONTACT-ME .hr::before,
+.PROTFOLIO .hr::before {
+    content: " ";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: rgb(44, 62, 80);
+    position: absolute;
+    left: 35px;
+    top: 50%;
+}
+
+.CONTACT-ME .hr::after,
+.PROTFOLIO .hr::after {
+    content: " ";
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: rgb(44, 62, 80);
+    position: absolute;
+    right: 35px;
+    top: 50%;
+}
+
+.PROTFOLIO h2,
+.CONTACT-ME h2 {
+    color: rgb(44, 62, 80);
+}
+
+.second-PROTFOLIO div {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    padding: 100px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-PROTFOLIO div:hover {
+    width: 220px;
+    height: 220px;
+    transition: 1s all 0.5s;
+}
+
+.second-PROTFOLIO div .ph:hover {
+    width: 140px;
+    transition: 1s all 0.5s;
+}
+
+.p1 {
+    background-color:#ce8e6b;
+}
+
+.p2 {
+    background-color: #44426E;
+}
+
+.p3 {
+    background-color:#e0a788;
+}
+
+.p4 {
+    background-color:#180e46;
+}
+
+.p5 {
+    background-color:#e6631d;
+}
+
+
+
+.ph {
+    width: 120px;
+}
+.p1,.p2,.p3,.p4,.p5{
+     font-size: 100px;
+}
+.second-PROTFOLIO {
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.PROTFOLIO h2,
+.ABOUT h2,
+.CONTACT-ME h2 {
+    padding: 20px 0px;
+}
+
+/* end PROTFOLIO */
+/* start about */
+.ABOUT {
+    width: 100%;
+    height: max-content;
+    background-color:#ec702d ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    margin: 30px 0px;
+}
+.ABOUT a {
+    text-decoration: none;
+    border: 4px solid #090325;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+}
+
+.second-about ul li {
+    margin: 20px 0px;
+    padding: 0 20px;
+}
+
+.second-about ul li p {
+    width: 285px;
+    height: 120px;
+}
+
+.download-icon {
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin: 0px 10px;
+}
+
+/* end about */
+/* start contact me */
+input,
+textarea {
+    width: 640px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(108, 117, 167);
+    padding: 30px 0px;
+    margin: 20px 0px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.CONTACT-ME form button {
+    width: 100px;
+    height: 65px;
+    border-radius: 8px;
+    border:1px solid rgba(37, 33, 33, 0.486);
+    background-color: #e6631d;
+    color: white;
+    
+    
+}
+
+.CONTACT-ME {
+    padding: 100px 0px;
+    margin: 30px 0px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 1.2rem;
+}
+
+/* end contact me */
+/* start footer  */
+.parent {
+    padding: 50px 0;
+    width: 100%;
+    height: max-content;
+    background-color:#ec702d ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.parent2 {
+    width: 100%;
+    height: max-content;
+    background-color:#090325 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.child,
+.child3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.child3 {
+    width: 180px;
+    text-align: center;
+}
+
+.child h3,
+.child3 h3 {
+    padding: 20px 0px;
+    width: max-content;
+}
+
+.child3 p a {
+    color:#180e46;
+}
+
+.child ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.parent2 p span {
+    border: 1px solid white;
+    padding: 0 5px;
+    border-radius: 50%;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    margin: 0px 10px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+
+/* end footer */
+.display-flex {
+    display: flex;
+}
+.second-PROTFOLIO.p1 i{
+    size: 50px;
+}
+@media screen and (max-width:700px) {
+    nav h1 {
+        font-size: 1.2rem;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .personal {
+        width: 200px;
+    }
+
+    .hero div {
+        width: 195px;
+        height: 195px;
+    }
+
+    .CONTACT-ME .hr::before,
+    .PROTFOLIO .hr::before,
+    .hero .hr::after,
+    .ABOUT .hr::after,
+    .hero .hr::before,
+    .ABOUT .hr::before,
+    .CONTACT-ME .hr::after,
+    .PROTFOLIO .hr::after {
+        width: 70px;
+    }
+
+    input,
+    textarea {
+        width: 260px;
+    }
+
+    .hero p {
+        font-size: 0.8rem;
+    }
+
+    nav .icon-nav,nav button {
+        display: block;
+    }
+
+    nav .second-nav ul {
+        display: none;
+    }
+
+    .second-about ul li p {
+        width: 260px;
+    }
+
+    .second-about ul li {
+        padding: 0px;
+    }
+}
